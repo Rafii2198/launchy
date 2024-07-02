@@ -34,7 +34,7 @@ import kotlin.io.path.inputStream
 private val LaunchyStateProvider = compositionLocalOf<LaunchyState> { error("No local versions provided") }
 
 // set to true to enable dev mode
-const val DEV_MODE = false
+const val DEV_MODE = true
 val LocalLaunchyState: LaunchyState
     @Composable
     get() = LaunchyStateProvider.current
